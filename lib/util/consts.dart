@@ -5,7 +5,7 @@ import 'dart:math';
 class Constants{
 
   //App related strings
-  static String appName = "Flutter Ebook App";
+  static String appName = "Ebook App";
 
 
   //Colors for theme

@@ -17,7 +17,7 @@ class Explore extends StatelessWidget{
           appBar: AppBar(
             centerTitle: true,
             title: Text(
-              "Explore",
+              "Explorar",
             ),
           ),
 
@@ -64,7 +64,7 @@ class Explore extends StatelessWidget{
                               );
                             },
                             child: Text(
-                              "See All",
+                              "Ver Todo",
                               style: TextStyle(
                                 color: Theme.of(context).accentColor,
                                 fontWeight: FontWeight.w400,

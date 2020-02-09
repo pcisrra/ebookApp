@@ -114,7 +114,7 @@ class _MainScreenState extends State<MainScreen>{
               SizedBox(height: 25),
 
               Text(
-                "Are you sure you want to quit?",
+                "Seguro que desea salir?",
                 style: TextStyle(
                   fontWeight: FontWeight.w500,
                   fontSize: 14,
@@ -154,7 +154,7 @@ class _MainScreenState extends State<MainScreen>{
                         borderRadius: BorderRadius.circular(5.0),
                       ),
                       child: Text(
-                        "Yes",
+                        "Si",
                         style: TextStyle(
                           color: Colors.white,
                         ),

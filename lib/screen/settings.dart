@@ -17,17 +17,17 @@ class _ProfileState extends State<Profile> {
   List items = [
     {
       "icon": Feather.heart,
-      "title": "Favorites",
+      "title": "Favoritos",
       "page": Favorites(),
     },
     {
       "icon": Feather.download,
-      "title": "Downloads",
+      "title": "Descargas",
       "page": Downloads(),
     },
     {
       "icon": Feather.moon,
-      "title": "Dark Mode"
+      "title": "Modo Dark"
     },
 //    {
 //      "icon": Feather.info,
@@ -43,7 +43,7 @@ class _ProfileState extends State<Profile> {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          "Settings",
+          "Configuraciones",
         ),
       ),
 
@@ -53,7 +53,7 @@ class _ProfileState extends State<Profile> {
         physics: NeverScrollableScrollPhysics(),
         itemCount: items.length,
         itemBuilder: (BuildContext context, int index) {
-          if(items[index]['title'] =="Dark Mode"){
+          if(items[index]['title'] =="Modo Dark"){
             return SwitchListTile(
               secondary: Icon(
                 items[index]['icon'],
@@ -78,7 +78,7 @@ class _ProfileState extends State<Profile> {
 
           return ListTile(
             onTap: (){
-              if(items[index]['title'] == "About"){
+              if(items[index]['title'] == "Info"){
 
               }else{
                 Provider.of<FavoritesProvider>(context, listen: false)

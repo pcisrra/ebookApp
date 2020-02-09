@@ -69,7 +69,7 @@ class Details extends StatelessWidget {
                 onPressed: (){
                   Share.text(
                     "${entry.title.t} by ${entry.author.name.t}",
-                    "Read/Download ${entry.title.t} from ${entry.link[3].href}.",
+                    "Leer/Descargar ${entry.title.t} from ${entry.link[3].href}.",
                     "text/plain",
                   );
                 },

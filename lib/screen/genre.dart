@@ -52,7 +52,7 @@ class _GenreState extends State<Genre> {
       }
     }).catchError((e){
       Fluttertoast.showToast(
-        msg: "Something went wrong",
+        msg: "Algo salió mal",
         toastLength: Toast.LENGTH_SHORT,
         timeInSecForIos: 1,
       );
@@ -72,7 +72,7 @@ class _GenreState extends State<Genre> {
         });
       }
       Fluttertoast.showToast(
-        msg: "loading..",
+        msg: "cargando..",
         toastLength: Toast.LENGTH_SHORT,
         timeInSecForIos: 1,
       );
@@ -85,13 +85,13 @@ class _GenreState extends State<Genre> {
           });
         }
         Fluttertoast.showToast(
-          msg: "loaded!",
+          msg: "listo!",
           toastLength: Toast.LENGTH_SHORT,
           timeInSecForIos: 1,
         );
       }).catchError((e){
         Fluttertoast.showToast(
-          msg: "Something went wrong",
+          msg: "Algo salió mal",
           toastLength: Toast.LENGTH_SHORT,
           timeInSecForIos: 1,
         );

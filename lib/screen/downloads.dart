@@ -39,7 +39,7 @@ class _DownloadsState extends State<Downloads> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Downloads"),
+        title: Text("Descargas"),
       ),
       body: dls.isEmpty
           ? Center(
@@ -53,7 +53,7 @@ class _DownloadsState extends State<Downloads> {
             ),
 
             Text(
-              "Nothing is here",
+              "No hay nada aquí",
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
@@ -150,7 +150,7 @@ class _DownloadsState extends State<Downloads> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
                               Text(
-                                "COMPLETED",
+                                "COMPLETADO",
                                 style: TextStyle(
                                   fontSize: 13,
                                   fontWeight: FontWeight.bold,

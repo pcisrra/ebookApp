@@ -13,7 +13,7 @@ class Favorites extends StatelessWidget {
           appBar: AppBar(
             centerTitle: true,
             title: Text(
-              "Favorites",
+              "Favoritos",
             ),
           ),
           body: favoritesProvider.posts.isEmpty
@@ -28,7 +28,7 @@ class Favorites extends StatelessWidget {
                 ),
 
                 Text(
-                  "Nothing is here",
+                  "No hay nada aquí",
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
