@@ -60,7 +60,7 @@ class Home extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       Text(
-                        "Categorias",
+                        "Categorías",
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,

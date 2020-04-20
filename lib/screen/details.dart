@@ -213,7 +213,7 @@ class Details extends StatelessWidget {
                                   });
                                 },
                                 child: Text(
-                                  "Read Book",
+                                  "Leer libro",
                                 ),
                               )
                                   : FlatButton(
@@ -225,7 +225,7 @@ class Details extends StatelessWidget {
                                       .replaceAll(r"\'", ""),
                                 ),
                                 child: Text(
-                                  "Download",
+                                  "Descargar",
                                 ),
                               ),
                             ),
@@ -241,7 +241,7 @@ class Details extends StatelessWidget {
               SizedBox(height: 30,),
 
               Text(
-                "Book Description",
+                "Descripción del libro",
                 style: TextStyle(
                   color: Theme.of(context).accentColor,
                   fontSize: 20,
@@ -258,7 +258,7 @@ class Details extends StatelessWidget {
               SizedBox(height: 30,),
 
               Text(
-                "More from Author",
+                "Más del autor",
                 style: TextStyle(
                   color: Theme.of(context).accentColor,
                   fontSize: 20,

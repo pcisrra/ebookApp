@@ -7,25 +7,25 @@ class Api {
   static String baseURL =
       "https://catalog.feedbooks.com";
   static String popular =
-      "https://catalog.feedbooks.com/publicdomain/browse/en/top.atom";
+      "https://catalog.feedbooks.com/publicdomain/browse/es/top.atom";
   static String recent =
-      "https://catalog.feedbooks.com/publicdomain/browse/en/recent.atom";
+      "https://catalog.feedbooks.com/publicdomain/browse/es/recent.atom";
   static String awards =
-      "https://catalog.feedbooks.com/publicdomain/browse/en/awards.atom";
+      "https://catalog.feedbooks.com/publicdomain/browse/es/awards.atom";
   static String noteworthy =
-      "https://catalog.feedbooks.com/publicdomain/browse/en/homepage_selection.atom";
+      "https://catalog.feedbooks.com/publicdomain/browse/es/homepage_selection.atom";
   static String shortStory =
-      "https://catalog.feedbooks.com/publicdomain/browse/en/top.atom?cat=FBFIC029000";
+      "https://catalog.feedbooks.com/publicdomain/browse/es/top.atom?cat=FBFIC029000";
   static String sciFi =
-      "https://catalog.feedbooks.com/publicdomain/browse/en/top.atom?cat=FBFIC028000";
+      "https://catalog.feedbooks.com/publicdomain/browse/es/top.atom?cat=FBFIC028000";
   static String actionAdventure =
-      "https://catalog.feedbooks.com/publicdomain/browse/en/top.atom?cat=FBFIC002000";
+      "https://catalog.feedbooks.com/publicdomain/browse/es/top.atom?cat=FBFIC002000";
   static String mystery =
-      "https://catalog.feedbooks.com/publicdomain/browse/en/top.atom?cat=FBFIC022000";
+      "https://catalog.feedbooks.com/publicdomain/browse/es/top.atom?cat=FBFIC022000";
   static String romance =
-      "https://catalog.feedbooks.com/publicdomain/browse/en/top.atom?cat=FBFIC027000";
+      "https://catalog.feedbooks.com/publicdomain/browse/es/top.atom?cat=FBFIC027000";
   static String horror =
-      "https://catalog.feedbooks.com/publicdomain/browse/en/top.atom?cat=FBFIC015000";
+      "https://catalog.feedbooks.com/publicdomain/browse/es/top.atom?cat=FBFIC015000";
 
   static Future<CategoryFeed> getCategory(String url) async {
     Dio dio = Dio();
