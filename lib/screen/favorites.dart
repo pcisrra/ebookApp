@@ -10,6 +10,7 @@ class Favorites extends StatelessWidget {
     return Consumer<FavoritesProvider>(
       builder: (BuildContext context, FavoritesProvider favoritesProvider, Widget child) {
         return Scaffold(
+          resizeToAvoidBottomPadding: false,
           appBar: AppBar(
             centerTitle: true,
             title: Text(

@@ -115,6 +115,7 @@ class _GenreState extends State<Genre> {
   Widget build(BuildContext context) {
 
     return Scaffold(
+      resizeToAvoidBottomPadding: false,
       appBar: AppBar(
         centerTitle: true,
         title: Text("${widget.title}"),

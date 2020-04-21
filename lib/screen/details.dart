@@ -38,6 +38,7 @@ class Details extends StatelessWidget {
     return Consumer<DetailsProvider>(
       builder: (BuildContext context, DetailsProvider detailsProvider, Widget child) {
         return Scaffold(
+          resizeToAvoidBottomPadding: false,
           appBar: AppBar(
             actions: <Widget>[
 //          IconButton(

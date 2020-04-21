@@ -22,6 +22,7 @@ class _MainScreenState extends State<MainScreen>{
     return WillPopScope(
       onWillPop: ()=>exitDialog(context),
       child: Scaffold(
+        resizeToAvoidBottomPadding: false,
         body: PageView(
           physics: NeverScrollableScrollPhysics(),
           controller: _pageController,

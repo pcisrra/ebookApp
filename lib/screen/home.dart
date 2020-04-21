@@ -15,6 +15,7 @@ class Home extends StatelessWidget {
     return Consumer<HomeProvider>(
       builder: (BuildContext context, HomeProvider homeProvider, Widget child) {
         return Scaffold(
+          resizeToAvoidBottomPadding: false,
           appBar: AppBar(
             centerTitle: true,
             title: Text(
