@@ -3,7 +3,6 @@ import 'package:flutter_ebook_app/podo/category.dart';
 import 'package:flutter_ebook_app/providers/home_provider.dart';
 import 'package:flutter_ebook_app/screen/genre.dart';
 import 'package:flutter_ebook_app/util/api.dart';
-import 'package:flutter_ebook_app/util/consts.dart';
 import 'package:flutter_ebook_app/widgets/book_card.dart';
 import 'package:flutter_ebook_app/widgets/book_list_item.dart';
 import 'package:page_transition/page_transition.dart';
@@ -19,7 +18,7 @@ class Home extends StatelessWidget {
           appBar: AppBar(
             centerTitle: true,
             title: Text(
-              "${Constants.appName}",
+              "Biblioteca",
               style: TextStyle(
                 fontSize: 20,
               ),
@@ -31,30 +30,6 @@ class Home extends StatelessWidget {
             onRefresh: ()=>homeProvider.getFeeds(),
             child: ListView(
               children: <Widget>[
-                Container(
-                  height: 200,
-                  child: Center(
-                    child: ListView.builder(
-                      padding: EdgeInsets.symmetric(horizontal: 15),
-                      scrollDirection: Axis.horizontal,
-                      itemCount: homeProvider.top.feed.entry.length,
-                      shrinkWrap: true,
-                      itemBuilder: (BuildContext context, int index) {
-                        Entry entry = homeProvider.top.feed.entry[index];
-                        return Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 10),
-                          child: BookCard(
-                            img: entry.link[1].href,
-                            entry: entry,
-                          ),
-                        );
-                      },
-                    ),
-                  ),
-                ),
-
-                SizedBox(height: 20,),
-
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 20),
                   child: Row(
@@ -121,6 +96,48 @@ class Home extends StatelessWidget {
                                 ),
                               ),
                             ),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                ),
+
+                SizedBox(height: 20,),
+
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 20),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Text(
+                        "Los más populares",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                SizedBox(height: 10,),
+
+                Container(
+                  height: 200,
+                  child: Center(
+                    child: ListView.builder(
+                      padding: EdgeInsets.symmetric(horizontal: 15),
+                      scrollDirection: Axis.horizontal,
+                      itemCount: homeProvider.top.feed.entry.length,
+                      shrinkWrap: true,
+                      itemBuilder: (BuildContext context, int index) {
+                        Entry entry = homeProvider.top.feed.entry[index];
+                        return Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 10),
+                          child: BookCard(
+                            img: entry.link[1].href,
+                            entry: entry,
                           ),
                         );
                       },

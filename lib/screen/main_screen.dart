@@ -28,8 +28,8 @@ class _MainScreenState extends State<MainScreen>{
           controller: _pageController,
           onPageChanged: onPageChanged,
           children: <Widget>[
-            Home(),
             Explore(),
+            Home(),
             Profile(),
           ],
         ),
@@ -50,7 +50,7 @@ class _MainScreenState extends State<MainScreen>{
 
             BottomNavigationBarItem(
               icon: Icon(
-                Feather.compass,
+                Feather.book,
               ),
               title: SizedBox(),
             ),

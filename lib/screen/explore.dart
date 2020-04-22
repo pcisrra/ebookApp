@@ -6,6 +6,7 @@ import 'package:flutter_ebook_app/util/api.dart';
 import 'package:flutter_ebook_app/widgets/book_card.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_ebook_app/util/consts.dart';
 
 class Explore extends StatelessWidget{
 
@@ -18,7 +19,7 @@ class Explore extends StatelessWidget{
           appBar: AppBar(
             centerTitle: true,
             title: Text(
-              "Explorar",
+              "${Constants.appName}",
             ),
           ),
 
