@@ -47,7 +47,6 @@ class Details extends StatelessWidget {
 //              Feather.download,
 //            ),
 //          ),
-
               IconButton(
                 onPressed: () async{
                   if(detailsProvider.faved){

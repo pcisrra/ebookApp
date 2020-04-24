@@ -159,7 +159,6 @@ class Home extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-
 //                InkWell(
 //                  onTap: (){
 //                    Navigator.push(
